@@ -1,5 +1,19 @@
+:root {
+    --ondo-text-clr: #263238;
+    --text-clr-1: #2194f3;
+    --text-clr-2: #FFFFFF;
+    --text-clr-3: #4D4D4D;
+    --text-clr-4: #717171;
+    --text-clr-5: #F5F7FA;
+    --nav-text-clr: #18191f;
+
+    --background-clr: #F5F7FA;
+    --button-bg-clr: #2194f3;
+}
+
 body {
     margin: 0;
+    font-family: 'Inter';
 }
 /*=========
 Layout
@@ -7,9 +21,8 @@ Layout
 header {
     max-width: 1440px;
     text-align: center;
-    font-family: 'Inter';
-    background-color: #F5F7FA;
-    border: 1px solid #F5F7FA;
+    background-color: var(--background-clr);
+    border: 1px solid var(--background-clr);
     margin: 0 auto;
 }
 
@@ -64,7 +77,12 @@ h3 {
     margin: 22px 0;
 }
 
+.ondo {
+    color: var(--ondo-text-clr);
+}
+
 li {
+    color: var(--nav-text-clr);
     line-height: 24px;
     font-size: 16px;
     font-weight: 400;
@@ -76,15 +94,15 @@ li {
 } 
 
 span {
-    color: #2194f3;
+    color: var(--text-clr-1);
 }
 
 .sign-up {
-    background-color: #2194f3;
-    color: white;
+    background-color: var(--button-bg-clr);
+    color: var(--text-clr-2);
 }
 
 .log-in {
-    color: #2194f3;
-    background-color: #F5F7FA;
+    color: var(--text-clr-1);
+    background-color: var(--background-clr);
 }
