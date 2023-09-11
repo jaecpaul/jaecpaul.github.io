@@ -9,21 +9,25 @@
 
     --background-clr: #F5F7FA;
     --button-bg-clr: #2194f3;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Inter';
+    max-width: 1440px;
 }
 /*=========
 Layout
 ==========*/
 header {
-    max-width: 1440px;
     text-align: center;
     background-color: var(--background-clr);
     border: 1px solid var(--background-clr);
     margin: 0 auto;
+    margin-bottom: 5px;
 }
 
 nav ul {
@@ -48,10 +52,38 @@ nav ul {
     margin-bottom: 0.5em;
 }
 
+.button-big {
+    background-color: var(--button-bg-clr);
+    border-radius: 0.5em;
+    border: 0;
+    padding: 14px 32px;
+    margin: 0 1rem;
+}
+
+.container-1__wrapper-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 96px 0px;
+    background-color: var(--background-clr);
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .container-1__image-1 {
+        display: none;
+    }
+    .container-1__wrapper-1 {
+        text-align: center;
+    }
+}
 
 @media (min-width: 768px) {
     header {
-        height: 80px;
+        height: 78px;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         align-items: center;
@@ -65,11 +97,41 @@ nav ul {
     .button-small {
         margin: 0;
     }
-}
+}    
 
 /*=========
 Typography
 ==========*/
+h1 {
+    font-size: 65px;
+    margin: 0 1rem;
+    color: var(--text-clr-3);
+    letter-spacing: 0.2rem;
+}
+
+.p1 {
+    font-size: 38px;
+    margin: 0 1rem;
+    color: var(--text-clr-1);
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+
+.p2 {
+    font-size: 16px;
+    font-weight: var(--fw-regular);
+    line-height: 24px;
+    color: var(--text-clr-4);
+    margin: 1.5rem 1rem;
+}
+
+.register {
+    color: var(--text-clr-2);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--fw-medium);
+}
+
 h3 {
     line-height: 36px;
     font-size: 28px;
@@ -85,12 +147,12 @@ li {
     color: var(--nav-text-clr);
     line-height: 24px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--fw-regular);
     padding: 0.25em 0;
 }
 
 .active {
-    font-weight: 500;
+    font-weight: var(--fw-medium);
 } 
 
 span {
