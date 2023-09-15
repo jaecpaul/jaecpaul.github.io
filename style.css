@@ -37,6 +37,10 @@ header {
     margin-bottom: 5px;
 }
 
+.container-1 {
+    margin-bottom: 40px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -147,6 +151,7 @@ h1 {
 .ondo {
     color: var(--ondo-text-clr);
     margin: 0;
+    font-weight: bold;
 }
 
 li {
@@ -173,16 +178,16 @@ span {
 
 .log-in {
     color: var(--text-clr-1);
-    background-color: var(--background-clr);
+    background-color: transparent;
 }
 .icon {
-    height: 98px;
+    min-height: 98px;
+    align-items: center;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: space-between;
-    align-items: center;
     margin: 0;
 }
 
@@ -287,4 +292,50 @@ h3 {
     margin: 0 auto;
     margin-bottom: 8px;
     margin-top: 16px;
+}
+.item-2 .button-big {
+    color: var(--text-clr-2);
+    font-size: 16px;
+    padding: 1em 2em;
+}
+
+.container-2 .wrapper-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-2 .wrapper-1 .item-2 {
+    width: 661px;
+}
+
+.container-2 .wrapper-1 .item-2 .wrapper {
+    max-width: 601px;
+    margin-bottom: 32px;
+}
+
+.container-2 .wrapper-1 .item-2 .wrapper p {
+    font-size: 14px;
+    font-weight: var(--fw-regular);
+    line-height: 20px;
+    color: var(--text-clr-4);
+
+}@media (max-width: 1000px) {
+    .community1,
+    .community2,
+    .community3 {
+        margin: 2em 0;
+    }
+
+    .container-2 .wrapper-1 .item-1{
+        display: none;
+    }
+
+    .container-2 .wrapper-1 .item-2 {
+        text-align: center;
+        margin: 1em;
+    }
+    .container-2 .wrapper-1 .item-2 > * {
+        margin: 0 auto;
+    }
 }
