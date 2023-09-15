@@ -24,6 +24,7 @@ body {
     margin: 0 auto;
     font-family: 'Inter';
     max-width: 1440px;
+    margin-bottom: 50em;
 }
 /*=========
 Layout
@@ -303,6 +304,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 40px;
 }
 
 .container-2 .wrapper-1 .item-2 {
@@ -337,5 +339,103 @@ h3 {
     }
     .container-2 .wrapper-1 .item-2 > * {
         margin: 0 auto;
+    }
+}
+
+p.p7 {
+    margin: 0;
+    color: var(--nav-text-clr);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--fw-regular);
+}
+
+h3.members,
+h3.Clubs,
+h3.event-bookings,
+h3.payments {
+    margin: 0;
+}
+
+.wrapper-01 p,
+.wrapper-02 p,
+.wrapper-03 p,
+.wrapper-04 p {
+    font-size: 16px;
+    font-weight: var(--fw-regular);
+    color: var(--text-clr-4);
+    margin: 0;
+    width: 191px;
+}
+
+.wrapper-01,
+.wrapper-02,
+.wrapper-03,
+.wrapper-04 {
+    display: flex;
+    gap: 16px;
+}
+
+.column-1,
+.column-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.column-1 {
+    margin-bottom: 40px;
+}
+
+.container-2 .wrapper-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-clr);
+    padding: 64px 0;
+}
+
+h2.helping {
+    max-width: 408px;
+    margin-bottom: 8px;
+}
+
+.container-2 .wrapper-2 .item-01 {
+    max-width: 540px;
+}
+.container-2 .wrapper-2 .item-02 {
+    margin-left: 3em;
+}
+@media (max-width: 588px) {
+    .wrapper-01,
+    .wrapper-02,
+    .wrapper-03,
+    .wrapper-04 {
+        margin: 0 auto;
+    }
+    .container-2 .wrapper-2 {
+        padding: 0;
+        padding-bottom: 3em;
+    } 
+}
+@media (max-width: 1367px) {
+    .container-2 .wrapper-2  .item-01 {
+        margin: 3em;
+        text-align: center;
+        margin-right: 3em;
+    }
+    .wrapper-02 {
+        justify-items: center;
+        padding: 0;
+        align-items: center;
+    }
+    .column-1,
+    .column-2{
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .wrapper-02 {
+        margin-bottom: 30px;
     }
 }
