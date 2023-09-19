@@ -5,6 +5,7 @@
     --text-clr-3: #4D4D4D;
     --text-clr-4: #717171;
     --text-clr-5: #F5F7FA;
+    --text-clr-6: #89939e;
     --nav-text-clr: #18191f;
 
     --background-clr: #F5F7FA;
@@ -427,6 +428,7 @@ h2.helping {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 48px;
 }
 
 .container-2 .wrapper-3 .item-1 {
@@ -457,6 +459,69 @@ h2.helping {
     margin-bottom: 16px;
 }
 
+.container-2 .wrapper-4 .column-01 {
+    max-width: 740px;
+}
+.container-2 .wrapper-4 .column-01 p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--fw-medium);
+    color: var(--text-clr-4);
+    margin: 0;
+    margin-bottom: 16px;
+}
+.container-2 .wrapper-4 .column-01 h4 {
+    color: var(--text-clr-1);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: var(--fw-semi-bold);
+    margin: 0;
+    margin-bottom: 8px;
+}
+.container-2 .wrapper-4 .column-01 .p8 {
+    font-weight: var(--fw-regular);
+    color: var(--text-clr-6);
+    margin: 0;
+}
+.container-2 .wrapper-4 .column-01 .wrapper__01 {
+    margin-bottom: 32px;
+}
+.container-2 .wrapper-4 .column-01 .flex-icon ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 493px;
+}
+.container-2 .wrapper-4 .column-01 .flex-meet {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
+.container-2 .wrapper-4 .column-01 .flex-meet p {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-clr-1);
+    margin: 0;
+}
+.container-2 .wrapper-4 .column-01 .wrapper__02 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container-2 .wrapper-4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--background-clr);
+    padding: 34px 0;
+}
+.container-2 .wrapper-4 .column-02{
+    margin-left: 3em;
+}
+
 @media (max-width: 1000px) {
     .community1,
     .community2,
@@ -482,5 +547,15 @@ h2.helping {
     .container-2 .wrapper-3 .item-1 .wrapper {
         margin: 0 auto;
         margin-bottom: 32px;
+    }
+    .container-2 .wrapper-4 .column-02 {
+        display: none;
+    }
+    .container-2 .wrapper-4 .column-01 {
+        margin-left: 1em;
+    }
+    .container-2 .wrapper-4 .column-01 .flex-icon ul {
+        width: auto;
+        gap: 25px;
     }
 }
