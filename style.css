@@ -17,7 +17,7 @@
     --fw-medium: 500;
     --fw-semi-bold: 600;
 
-    --fs-h1: clamp(40px, 7vw, 65px);
+    --fs-h1: clamp(40px, 7vw, 64px);
     --fs-h2: clamp(24px, 5vw, 36px);
     --fs-h3: clamp(22px, 4vw, 28px);
     --fs-h4: clamp(18px, 3vw, 20px);
@@ -134,7 +134,7 @@ h1 {
 }
 
 .p1 {
-    font-size: clamp(28px, 3vw, 36.5px);
+    font-size: clamp(28px, 3vw, 36px);
     margin: 0;
     color: var(--text-clr-1);
     font-weight: 600;
